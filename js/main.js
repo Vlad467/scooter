@@ -28,7 +28,7 @@ $('.cart-cont:nth-child(6) .block2 button').click(function() {
     $('.cart6').fadeIn(1000);
 });
 $('.close').click(function(){
-    $('.cart,.modal').fadeOut(1000);
+    $('.cart,.modal,.form, .thanks').fadeOut(1000);
 });
 $('.desc a').click(function(){
     $('.hidden-desc').addClass('table');
@@ -36,7 +36,18 @@ $('.desc a').click(function(){
 });
 $(document).mouseup(function (e) {
     var t = $(".target")
-
     t.is(e.target) || 0 !== t.has(e.target).length || (t.fadeOut(), $(".modal").fadeOut())
-
+});
+$('.burger-menu').on('click', function() {
+    var menu = $('.top-menu');
+    menu.fadeToggle();
+});
+$('.sale1').click(function(){
+    $('.modal').show();
+    $('.form').removeClass('form2').addClass('form1').fadeIn(1000);
+    $('.thanks').addClass('form2');
+});
+$('.sale2').click(function(){
+    $('.modal').show();
+    $('.form').removeClass('form1').addClass('form2').fadeIn(1000);
 });

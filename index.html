@@ -66,6 +66,9 @@
         line-height: 90px;
         color: #3240b0;
         font-size: 32px;
+            width: 120px;
+            background: url(images/icons/logo.png);
+            background-size: contain;
         }
         .logo:after {
         content: "";
@@ -73,7 +76,7 @@
         width: 2px;
         height: 35px;
         background: #3240b0;
-        margin-left: 18px;
+        margin-left: 85px;
         top: 50%;
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
@@ -85,7 +88,7 @@
         position: absolute;
         width: 120px;
         line-height: 1;
-        margin-left: 120px;
+        margin-left: 170px;
         top: 50%;
         text-align: left;
         -webkit-transform: translateY(-50%);
@@ -122,7 +125,6 @@
         height: 15px;
         background: url(images/icons/tel.jpg) center  no-repeat;
         }
-
         .top-menu a {
         margin-left: 70px;
         font-family: 'montserat semi-bold';
@@ -178,8 +180,6 @@
         font-family: 'montserat med';
         margin-bottom: 25px;
         margin-left: 40px;
-
-
         }
         .ellipse-cont {
         height: 180px;
@@ -197,15 +197,19 @@
         margin: auto;
             z-index: 10;
         }
-
     </style>
 </head>
 <body>
 <div class="top-menu-bg">
     <div class="layout">
         <div class="top-logo">
-            <a class="logo">Logo</a>
+            <a class="logo"></a>
             <p>38samokatov интернет-магазин  электросамокатов</p>
+        </div>
+        <div class="burger-menu">
+            <div class="burger-menu-top"></div>
+            <div class="burger-menu-middle"></div>
+            <div class="burger-menu-middle"></div>
         </div>
         <div class="top-menu">
             <a href="">Каталог</a>
@@ -402,7 +406,7 @@
     <div class="layout">
         <h2>Ты можешь получить ДОПОЛНИТЕЛЬНУЮ СКИДКУ на любой электросамокат!</h2>
         <p>Узнай как, у оператора</p>
-        <button>ПОЛУЧИТЬ СКИДКУ</button>
+        <button class="sale1">ПОЛУЧИТЬ СКИДКУ</button>
     </div>
 </div>
 <div class="profit-bg">
@@ -454,7 +458,7 @@
     <div class="layout">
         <h2>Появились вопросы? </h2>
         <p>Оставь свой номер телефона и наш оператор перезвонит в течении 15 минут</p>
-        <button>ОСТАВИТЬ НОМЕР</button>
+        <button class="sale2">ОСТАВИТЬ НОМЕР</button>
     </div>
 </div>
 <div class="map"></div>
@@ -1116,7 +1120,24 @@
             </div>
         </div>
     </div>
+    <div class="form target">
+
+        <form>
+            <h2>Оставьте Заявку</h2>
+            <p>Заполните форму сейчас</p>
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="tel" name="phone" placeholder="Ваш телефон">
+            <button>оставить заявку</button>
+        </form>
+    </div>
+    <div class="thanks">
+        <div class="close"></div>
+        <div class="thank-icon"></div>
+        <h2>Спасибо!</h2>
+        <p>Мы свяжемся с вами<br> в ближайшее время</p>
+    </div>
 </div>
+
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
