@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no">
+    <style>
+        @font-face {
+            font-family: 'montserat med';
+            src: url(fonts/Montserrat-Medium_0.ttf);
+        }
+        @font-face {
+            font-family: 'montserat bold';
+            src: url(fonts/Montserrat-Bold_0.ttf);
+        }
+        @font-face {
+            font-family: montserat;
+            src: url(fonts/Montserrat-Regular_0.ttf);
+        }
+        @font-face {
+            font-family: 'montserat semi-bold';
+            src: url(fonts/Montserrat-SemiBold_0.ttf);
+        }
+        @font-face {
+            font-family: 'montserat extra-bold';
+            src: url(fonts/Montserrat-ExtraBold_0.ttf);
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            -moz-text-size-adjust: none;
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            font-family: montserat;
+        }
+        html, body {
+        overflow-x: hidden;
+        }
+        body {
+            background: #fff;
+        }
+        .top-menu-bg {
+        height: 90px;
+        position: relative;
+        }
+        .layout {
+        width: 1000px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 auto;
+        }
+        .gallery {
+        overflow: hidden;
+        }
+        .top-logo {
+        width: 250px;
+        float: left;
+        }
+        .logo {
+        float: left;
+        height: 90px;
+        line-height: 90px;
+        color: #3240b0;
+        font-size: 32px;
+        }
+        .logo:after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 35px;
+        background: #3240b0;
+        margin-left: 18px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        }
+        .top-logo p {
+        position: absolute;
+        width: 120px;
+        line-height: 1;
+        margin-left: 120px;
+        top: 50%;
+        text-align: left;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: 'montserat med';
+        font-size: 12px;
+        }
+        .top-menu {
+        line-height: 90px;
+        float: left;
+        width: 745px;
+        font-family: 'montserat semi-bold';
+        font-size: 14px;
+        }
+        .tel {
+        float: right;
+        color: #4073d5;
+        position: relative;
+        }
+        .tel:before {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 120px;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: url(images/icons/tel.jpg) center  no-repeat;
+        }
+
+        .top-menu a {
+        margin-left: 70px;
+        font-family: 'montserat semi-bold';
+        text-decoration: none;
+        color: black;
+        }
+        .top-menu a:hover {
+        color: #1081e0;
+        }
+        .header-bg {
+        width: 100%;
+        height: 670px;
+        background: url(images/header.jpg) center -74px no-repeat;
+        border: 1px solid transparent;
+        }
+        .your-scooter {
+        width: 1000px;
+        position: relative;
+        height: 600px;
+        margin: 0 auto;
+        color: white;
+        }
+        .your-scooter h2 {
+        margin-top: 105px;
+        font-size: 31px;
+        }
+        .your-scooter h2  span{
+        font-size: 44px;
+        font-family: 'montserat extra-bold';
+        }
+        .your-scooter p {
+        font-size: 18px;
+        }
+        .scooter {
+        position: absolute;
+        z-index: 10;
+        width: 1096px;
+        height: 674px;
+        top: -106px;
+        right: -650px;
+        background: url(images/skooter.png) no-repeat;
+        }
+        .ellipse {
+        width: 141px;
+        height: 141px;
+        background: url(images/icons/mini-scooter.png);
+        }
+        .ellipse, .ellipse-cont ul {
+        float: left;
+        }
+        .ellipse-cont ul li {
+        font-size: 12px;
+        font-family: 'montserat med';
+        margin-bottom: 25px;
+        margin-left: 40px;
+
+
+        }
+        .ellipse-cont {
+        height: 180px;
+        margin-top: 65px;
+            position: relative;
+        }
+        .click {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background: url(images/icons/click.png);
+        top: 635px;
+        left: 0;
+        right: 0;
+        margin: auto;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+<body>
+<div class="top-menu-bg">
+    <div class="layout">
+        <div class="top-logo">
+            <a class="logo">Logo</a>
+            <p>38samokatov интернет-магазин  электросамокатов</p>
+        </div>
+        <div class="top-menu">
+            <a href="">Каталог</a>
+            <a href="">Отзывы</a>
+            <a href="">Доставка и оплата</a>
+            <p class="tel">+8 924 70 66 751</p>
+        </div>
+    </div>
+</div>
+<div class="header-bg">
+    <div class="click pulse"></div>
+    <div class="your-scooter">
+        <h2>Твой идеальный<br> <span>ЭЛЕКТРОСАМОКАТ</span>
+            <p>с доставкой по всей России БЕЗ ПРЕДОПЛАТЫ</p>
+        </h2>
+        <div class="ellipse-cont">
+        <div class="ellipse"></div>
+        <ul>
+            <li>Простое управление не требует <br> специальных навыков.</li>
+            <li>Каждая поездка дарит море позитивных эмоций.</li>
+            <li>Развлечение для детей и взрослых.</li>
+            <li>Скорость передвижения по городу<br>  и высокая маневренность.</li>
+        </ul>
+        </div>
+        <div class="scooter"></div>
+    </div>
+</div>
+<div class="screen2 layout">
+    <h2>Хочешь добавить красок в свою жизнь? </h2>
+    <p>Покупка электросамоката превратит<br> каждый твой день в фейерверк </p>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/NlOm5vYsWnY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <h2>Преврати каждый свой день в приключение! </h2>
+    <p>Выбери САМОКАТ, который <br> БУДЕТ РАДОВАТЬ именно ТЕБЯ!</p>
+</div>
+<div class="sale">
+    <div class="layout">
+        <h2>Внимание АКЦИЯ!</h2>
+        <p>Внимание АКЦИЯ! Скидка 25% на любой самокат до !</p>
+        <div class="gallery">
+            <div class="cart-cont">
+                <div class="img-cont">
+                    <div class="dark"><p> <span>Air Drive </span>карбон</p></div>
+                </div>
+                <div class="char">
+                    <p>Вес</p>
+                    <p>Скорость мах</p>
+                    <p>Запас хода</p>
+                    <p>Мощность</p>
+                </div>
+                <div class="par">
+                    <p>6,3 кг</p>
+                    <p>25 км/ч</p>
+                    <p>25 км</p>
+                    <p>250 Вт</p>
+                </div>
+                <div class="block1">
+                    <p>25 900 р.</p>
+                    <button>ЗАКАЗАТЬ</button>
+                </div>
+                <div class="block2">
+                    <p>19 900 р.</p>
+                    <button>ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+            <div class="cart-cont">
+                <div class="img-cont">
+                    <div class="dark"><p> <span>Air Drive </span>аллюминий </p></div>
+                </div>
+                <div class="char">
+                    <p>Вес</p>
+                    <p>Скорость мах</p>
+                    <p>Запас хода</p>
+                    <p>Мощность</p>
+                </div>
+                <div class="par">
+                    <p>7,5 кг</p>
+                    <p>25  км/ч</p>
+                    <p>20  км</p>
+                    <p>250 Вт</p>
+                </div>
+                <div class="block1">
+                    <p>23 500 р.</p>
+                    <button>ЗАКАЗАТЬ</button>
+                </div>
+                <div class="block2">
+                    <p>17 900  р.</p>
+                    <button>ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+            <div class="cart-cont">
+                <div class="img-cont">
+                    <div class="dark"><p> <span>Xiaomi Mijia</span> Electric Scooter</p></div>
+                </div>
+                <div class="char">
+                    <p>Вес</p>
+                    <p>Скорость мах</p>
+                    <p>Запас хода</p>
+                    <p>Мощность</p>
+                </div>
+                <div class="par">
+                    <p>12,5  кг</p>
+                    <p>25 км/ч</p>
+                    <p>30  км</p>
+                    <p>250 Вт</p>
+                </div>
+                <div class="block1">
+                    <p>36 500  р.</p>
+                    <button>ЗАКАЗАТЬ</button>
+                </div>
+                <div class="block2">
+                    <p>27 500  р.</p>
+                    <button>ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+            <div class="cart-cont">
+                <div class="img-cont">
+                    <div class="dark"><p> <span>Ninebot  </span> by Segway Kickscooter ES1</p></div>
+                </div>
+                <div class="char">
+                    <p>Вес</p>
+                    <p>Скорость мах</p>
+                    <p>Запас хода</p>
+                    <p>Мощность</p>
+                </div>
+                <div class="par">
+                    <p>11,3  кг</p>
+                    <p>20  км/ч</p>
+                    <p>25 км</p>
+                    <p>250 Вт</p>
+                </div>
+                <div class="block1">
+                    <p>27 000  р.</p>
+                    <button>ЗАКАЗАТЬ</button>
+                </div>
+                <div class="block2">
+                    <p>20 700  р.</p>
+                    <button>ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+            <div class="cart-cont">
+                <div class="img-cont">
+                    <div class="dark"><p> <span>Ninebot  </span>by Segway Kickscooter ES2 </p></div>
+                </div>
+                <div class="char">
+                    <p>Вес</p>
+                    <p>Скорость мах</p>
+                    <p>Запас хода</p>
+                    <p>Мощность</p>
+                </div>
+                <div class="par">
+                    <p>12,5  кг</p>
+                    <p>25 км/ч</p>
+                    <p>25 км</p>
+                    <p>300  Вт</p>
+                </div>
+                <div class="block1">
+                    <p>35 500  р.</p>
+                    <button>ЗАКАЗАТЬ</button>
+                </div>
+                <div class="block2">
+                    <p>26 800  р.</p>
+                    <button>ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+            <div class="cart-cont">
+                <div class="img-cont">
+                    <div class="dark"><p> <span>Ninebot  </span>by Segway Kickscooter ES4 </p></div>
+                </div>
+                <div class="char">
+                    <p>Вес</p>
+                    <p>Скорость мах</p>
+                    <p>Запас хода</p>
+                    <p>Мощность</p>
+                </div>
+                <div class="par">
+                    <p>14  кг</p>
+                    <p>30  км/ч</p>
+                    <p>40  км</p>
+                    <p>300  Вт</p>
+                </div>
+                <div class="block1">
+                    <p>44 800  р.</p>
+                    <button>ЗАКАЗАТЬ</button>
+                </div>
+                <div class="block2">
+                    <p>33 800  р.</p>
+                    <button>ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="extra-sale">
+    <div class="layout">
+        <h2>Ты можешь получить ДОПОЛНИТЕЛЬНУЮ СКИДКУ на любой электросамокат!</h2>
+        <p>Узнай как, у оператора</p>
+        <button>ПОЛУЧИТЬ СКИДКУ</button>
+    </div>
+</div>
+<div class="profit-bg">
+    <div class="layout">
+        <h2>С нами удобно!</h2>
+        <p>Выбери САМОКАТ, который  <br>БУДЕТ РАДОВАТЬ именно ТЕБЯ!</p>
+        <div class="gallery">
+        <div class="prof-cont">
+            <div class="prof-img-cont">
+                <div class="prof-img"></div>
+            </div>
+            <p>Официальная гарантия<br> и сервисное обслуживание</p>
+        </div>
+        <div class="prof-cont">
+            <div class="prof-img-cont">
+                <div class="prof-img"></div>
+            </div>
+            <p>Возврат в течение 14 дней<br> с момента покупки.</p>
+        </div>
+        <div class="prof-cont">
+            <div class="prof-img-cont">
+                <div class="prof-img"></div>
+            </div>
+            <p>  Доставка по России <br>от 1 дня</p>
+        </div>
+        <div class="prof-cont">
+            <div class="prof-img-cont">
+                <div class="prof-img"></div>
+            </div>
+            <p> Оплата любым <br>удобным способом.</p>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="feedback">
+    <div class="layout">
+        <h2>Отзывы</h2>
+        <p>Выбери САМОКАТ, который<br>  БУДЕТ РАДОВАТЬ именно ТЕБЯ!</p>
+        <div class="slider">
+            <div class="slider-cont">
+                <div class="slider-img"></div>
+                <h2><span>Лариса, 22 года</span></h2>
+                <p>dsa</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="extra-sale">
+    <div class="layout">
+        <h2>Появились вопросы? </h2>
+        <p>Оставь свой номер телефона и наш оператор перезвонит в течении 15 минут</p>
+        <button>ОСТАВИТЬ НОМЕР</button>
+    </div>
+</div>
+<div class="map"></div>
+<div class="footer ">
+    <div class="layout">
+        <div class="top-menu">
+            <a href="feedback.html" target="_blank">Обратная связь</a>
+            <a href="garrante.html" target="_blank">Гарантия и сервис</a>
+            <a href="delivery.html" target="_blank">Доставка и оплата </a>
+            <a href="return.html" target="_blank">Обмен и возврат</a>
+        </div>
+    </div>
+   <p> Все права защищены.© 2012</p>
+    <a class="pol" href="policy.html" target="_blank">Политика конфиденциальности</a>
+</div>
+<div class="modal">
+    <div class="cart target cart1">
+        <h2>Электросамокат Ninebot by Segway Kickscooter ES1 </h2>
+        <div class="close"></div>
+        <div class="big-img"></div>
+        <div class="cart-content">
+            <div class="mini-gallery">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+            <div class="block2">
+                <p>20 700  р.</p>
+                <button>ЗАКАЗАТЬ</button>
+            </div>
+            <div class="param-gallery">
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img1"></div>
+                    </div>
+                    <p>Ультрамодный дизайн</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img2"></div>
+                    </div>
+                    <p>Вес 11,3 кг</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img3"></div>
+                    </div>
+                    <p>Передний амортизатор</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img4"></div>
+                    </div>
+                    <p>Светоидная фара и отражатели</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img5"></div>
+                    </div>
+                    <p>Литые колеса<br> 8"</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img6"></div>
+                    </div>
+                    <p>Круиз контроль</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img7"></div>
+                    </div>
+                    <p>Приложение для смартфона</p>
+                </div>
+            </div>
+            <div class="desc">
+                <h2>Характеристиики</h2>
+                <p>Для тех, кто давно мечтал купить недорогой электрический самокат, компания Ninebot by Segway
+                    выпустила электросамокат KickScooter ES1. Эта модель не уступает в характеристиках и дизайне своим
+                    собратьям из более дорогих линеек других производителей.</p>
+                <p>Основные преимущества: 
+                    Для взрослых и детей. Выдерживает нагрузку до 100 кг, подходит для людей ростом от 120 до 200 см.
+                    Минимальный вес пользователя — 25 кг.</p>
+                <p>Ninebot KickScooter ES1, это не только развлечение для детей, но и компактное и удобное средство
+                    передвижения для взрослого. ES1 станет отличным решением для передвижения в городских
+                    автомобильных пробках, активного отдыха в парковой зоне и загородных прогулок.</p>
+                <a href="#">Смотреть все характеристики</a>
+            </div>
+            <div class="hidden-desc">
+                <div class="col1"><span>Основное:</span><br>
+                    Тип:электросамокат<br>
+                    Модель:KickScooter ES1<br>
+                    Производитель:Ninebot by Segway<br>
+                    Страна производитель:Китай<br>
+                    Вес самоката:11.3 кг<br>
+                   <span> Общие характеристики:</span><br>
+                    Материал рамы: алюминиевый сплав<br>
+                    Степень защиты:IP54<br>
+                    Максимальная нагрузка:100 кг<br>
+                    Угол подъема:10 °<br>
+                    Пробег на одном заряде:20 км<br>
+                    Пробег с доп. аккумулятором:45 км<br>
+                    Максимальная скорость:20 км/ч<br>
+                    Емкость аккумулятора:5200 мА*ч<br>
+                    Мощность двигателя:250 Вт<br>
+                    Длина самоката:113 см<br>
+                    Время зарядки:3,5 ч
+                </div>
+                <div class="col2"><span>Подвеска:</span><br>
+                    Передний амортизатор:есть<br>
+                    Задний амортизатор:нет<br>
+                    <span>Колеса:</span><br>
+                    Число колес:2<br>
+                    Тип шин:безвоздушные (литые)<br>
+                    Материал колес:полиуретан<br>
+                    Диаметр переднего колеса:200 мм<br>
+                    Диаметр заднего колеса:192 мм<br>
+                    <span>Дополнительно:</span><br>
+                    Подключение доп. аккумулятора: есть<br>
+                    Дисплей: светодиодный<br>
+                    Bluetooth: есть<br>
+                    Приложение:Android OS, iOS<br>
+                    Складной:да<br>
+                    Передняя фара:есть<br>
+                    Задняя фара:есть<br>
+                    Подсветка дна:нет<br>
+                    Ручной тормоз:Да<br>
+                    Ножной тормоз:Да<br>
+                    Подножка:Да
+                </div>
+            </div>
+            </div>
+        </div>
+    <div class="cart target cart2">
+        <h2>Air Drive карбон</h2>
+        <div class="close"></div>
+        <div class="big-img"></div>
+        <div class="cart-content">
+            <div class="mini-gallery">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+            <div class="block2">
+                <p>20 700 р.</p>
+                <button>ЗАКАЗАТЬ</button>
+            </div>
+            <div class="param-gallery">
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img1"></div>
+                    </div>
+                    <p>Ультрамодный дизайн</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img2"></div>
+                    </div>
+                    <p>Вес 6,3 кг</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img3"></div>
+                    </div>
+                    <p>Передний амортизатор</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img5"></div>
+                    </div>
+                    <p>Литые колеса<br> 5,5"</p>
+                </div>
+            </div>
+            <div class="desc">
+                <h2>Характеристиики</h2>
+                <p>Карбоновый электросамокат — самый легкий среди электросамокатов
+                    Мощный, лёгкий, стильный и удобный.</p>
+                <p>Инновационный лёгкий электросамокат AirDrive Carbon, который изготовлен из настоящего, прочного и
+                    лёгкого карбона.</p>
+                <p>Складной корпус и легкий вес позволят Вам с комфортом перевозить электросамокат в общественном
+                    транспорте или в автомобиле. Управление у самоката очень простое и интуитивно понятное, а мощная
+                    LED-фара без проблем позволит вам кататься в тёмное время суток.</p>
+                <p>Но самое главное в данном самокате то, что он весит чуть более 6 кг.! 
+                    Данный самокат при этих технических характеристиках считается самым лёгким в мире
+                    электросамокатом!</p>
+                <p>Более того, эта модель является складной, а значит, его можно смело использовать в повседневной
+                    жизни.</p>
+                <a href="#">Смотреть все характеристики</a>
+            </div>
+            <div class="hidden-desc">
+                <div class="col1"><span>Основное:</span><br>
+                    Тип: электросамокат<br>
+                    Модель: AirDrive карбон<br>
+                    Страна производитель: Китай<br>
+                    Вес самоката: 6,3 кг.<br>
+                    <span> Общие характеристики:</span><br>
+                    Материал рамы: облегченная карбоновая рама<br>
+                    Степень защиты: IP54<br>
+                    Максимальная нагрузка: 90 кг<br>
+                    Угол подъема: 20 °<br>
+                    Пробег на одном заряде: 25 км<br>
+                    Максимальная скорость: 25 км/ч<br>
+                    Емкость встроенного аккумулятора: 8800 мА*ч<br>
+                    Мощность двигателя: 250 Вт<br>
+                    Время зарядки: 3.5 ч<br>
+                </div>
+                <div class="col2"><span>Подвеска:</span><br>
+                    Передний амортизатор: есть<br>
+                    <span>Колеса:</span><br>
+                    Число колес: 2<br>
+                    Тип шин: безвоздушные<br>
+                    Материал колес: полиуретан<br>
+                    Диаметр переднего колеса: 140 мм<br>
+                    Диаметр заднего колеса: 140 мм<br>
+                    <span>Дополнительно:</span><br>
+                    Дисплей: цифровой<br>
+                    Складной: да<br>
+                    Передняя фара: есть<br>
+                    Ручной тормоз: Да<br>
+                    Ножной тормоз: Да<br>
+                    Подножка: Да<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart target cart3">
+        <h2>Air Drive аллюминий</h2>
+        <div class="close"></div>
+        <div class="big-img"></div>
+        <div class="cart-content">
+            <div class="mini-gallery">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+            <div class="block2">
+                <p>17 900 р.</p>
+                <button>ЗАКАЗАТЬ</button>
+            </div>
+            <div class="param-gallery">
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img1"></div>
+                    </div>
+                    <p>Ультрамодный дизайн</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img2"></div>
+                    </div>
+                    <p>Вес 7.5 кг</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img3"></div>
+                    </div>
+                    <p>Передний амортизатор</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img4"></div>
+                    </div>
+                    <p>Светоидная фара</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img5"></div>
+                    </div>
+                    <p>Литые колеса<br> 5.5"</p>
+                </div>
+            </div>
+            <div class="desc">
+                <h2>Характеристиики</h2>
+                <p>Является инновационной моделью, сделанной специально для езды по городу.</p>
+                <p>Благодаря складной системе и небольшому весу вы можете легко переносить его через различные преграды,
+                    а также брать с собой на прогулку или работу.</p>
+                <p>NУправление у самоката очень просто и интуитивно понятное. Газ на правой рукоятке, тормоз на левой, а
+                    посередине бортовой компьютер,который показывают всю необходимую информацию во время вашей поездки: текущая скорость, пробег,
+                    заряд аккумулятора, выбранная передача (всего их 3).</p>
+                <p>По центру руля находится кнопка для включения мощной LED-лампы, которая без проблем позволит вам
+                    кататься в тёмное время суток.</p>
+                <p>Самокат весит 7,5 кг.!</p>
+                <p>Данный самокат при этих технических характеристиках считается одним из лёгких в мире электросамокатов
+                    (уступает по весу только арбоновой версии)!</p>
+                <p>Более того, эта модель является складной, а значит, его можно смело использовать в повседневной жизни.</p>
+                <a href="#">Смотреть все характеристики</a>
+            </div>
+            <div class="hidden-desc">
+                <div class="col1"><span>Основное:</span><br>
+                    Тип: электросамокат<br>
+                    Модель: AirDrive аллюминий<br>
+                    Страна производитель: Китай<br>
+                    Вес самоката: 7,5 кг.<br>
+                    <span> Общие характеристики:</span><br>
+                    Материал рамы: облегченная аллюминиевая рама<br>
+                    Степень защиты: IP54<br>
+                    Максимальная нагрузка: 90 кг<br>
+                    Угол подъема: 20 °<br>
+                    Пробег на одном заряде: 20 км<br>
+                    Максимальная скорость: 25 км/ч<br>
+                    Емкость встроенного аккумулятора: 8800 мА*ч<br>
+                    Мощность двигателя: 250 Вт<br>
+                    Время зарядки: 3.5 ч<br>
+                </div>
+                <div class="col2"><span>Подвеска:</span><br>
+                    Передний амортизатор:есть<br>
+                    <span>Колеса:</span><br>
+                    Число колес: 2<br>
+                    Тип шин: безвоздушные<br>
+                    Материал колес: полиуретан<br>
+                    Диаметр переднего колеса: 140 мм<br>
+                    Диаметр заднего колеса: 140 мм<br>
+                    <span>Дополнительно:</span><br>
+                    Дисплей: цифровой<br>
+                    Складной: да<br>
+                    Передняя фара: есть<br>
+                    Ручной тормоз: Да<br>
+                    Ножной тормоз: Да<br>
+                    Подножка: Да
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart target cart4">
+        <h2>Электросамокат Xiaomi Mijia Electric Scooter</h2>
+        <div class="close"></div>
+        <div class="big-img"></div>
+        <div class="cart-content">
+            <div class="mini-gallery">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+            <div class="block2">
+                <p>27 500 р.</p>
+                <button>ЗАКАЗАТЬ</button>
+            </div>
+            <div class="param-gallery">
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img1"></div>
+                    </div>
+                    <p>Ультрамодный дизайн</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img2"></div>
+                    </div>
+                    <p>Вес 12,5 кг</p>
+                </div>
+
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img4"></div>
+                    </div>
+                    <p>Светоидная фара</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img5"></div>
+                    </div>
+                    <p>Колеса 216мм</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img7"></div>
+                    </div>
+                    <p>Приложение для смартфона</p>
+                </div>
+            </div>
+            <div class="desc">
+                <h2>Характеристиики</h2>
+                <p>Сконцентрируйтесь на путешествии отложите всё остальное!это не просто внешний облик, но
+                    и отражение души разработчика. Каркас электросамоката Smart Electric Scooter от Xiaomi, равно как
+                    и все его сопрягающие детали обладают единым минималистическим дизайном. Несмотря на
+                    кажущуюся простоту, разработчик продумал мельчайшие нюансы, чтобы сделать вашу поездку на
+                    электрическом самокате как можно комфортнее. Всё это добавляет привлекательности и удобства в
+                    эксплуатации. Для начала работы с девайсом достаточно одного нажатия!</p>
+                <a href="#">Смотреть все характеристики</a>
+            </div>
+            <div class="hidden-desc">
+                <div class="col1"><span>Основное:</span><br>
+                    Тип: электросамокат
+                    Модель: Xiaomi Mijia Electric Scooter
+                    Производитель: Xiaomi
+                    Страна производитель: Китай
+                    Вес самоката: 12,5 кг.
+                    <span> Общие характеристики:</span><br>
+                    Материал рамы: аллюминий
+                    Степень защиты: IP54
+                    Максимальная нагрузка: 120 кг
+                    Угол подъема: 20 °
+                    Пробег на одном заряде: 30 км
+                    Максимальная скорость: 25 км/ч
+                    Емкость встроенного аккумулятора: 7,8 мА*ч
+                    Мощность двигателя: 250 Вт
+                    Время зарядки: 4.5 ч
+                </div>
+                <div class="col2"><span>Подвеска:</span><br>
+                    Амортизатор: нет<br>
+                    <span>Колеса:</span><br>
+                    Число колес: 2<br>
+                    Тип шин: накачиваемые<br>
+                    Материал колес: резина<br>
+                    Диаметр переднего колеса: 216 мм<br>
+                    Диаметр заднего колеса: 216 мм<br>
+                    <span>Дополнительно:</span><br>
+                    Дисплей: цифровой<br>
+                    Bluetooth: есть<br>
+                    Приложение: Android OS, iOS<br>
+                    Складной: да<br>
+                    Передняя фара: есть<br>
+                    Задний стоп-сигнал: есть<br>
+                    Ручной тормоз: Да<br>
+                    Система торможения:двухдисковая<br>
+                    Подножка: Да<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart target cart5">
+        <h2>  Электросамокат Ninebot by Segway Kickscooter ES2   </h2>
+        <div class="close"></div>
+        <div class="big-img"></div>
+        <div class="cart-content">
+            <div class="mini-gallery">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+            <div class="block2">
+                <p>26 800  р.</p>
+                <button>ЗАКАЗАТЬ</button>
+            </div>
+            <div class="param-gallery">
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img1"></div>
+                    </div>
+                    <p>Ультрамодный дизайн</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img2"></div>
+                    </div>
+                    <p>Вес 12,5  кг</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img3"></div>
+                    </div>
+                    <p>Двойной амортизатор</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img4"></div>
+                    </div>
+                    <p>Светоидная фара и отражатели</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img5"></div>
+                    </div>
+                    <p>Литые колеса<br> 8"</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img6"></div>
+                    </div>
+                    <p>Круиз контроль</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img7"></div>
+                    </div>
+                    <p>Приложение для смартфона</p>
+                </div>
+            </div>
+            <div class="desc">
+                <h2>Характеристиики</h2>
+                <p>Стильный и лаконичный, похожий на алюминиевую птицу, Ninebot Kickscooter ES2 мчится со
+                    скоростью 25 км/ч по тротуару, плитке, гравию и лесным тропинкам. Оттолкнись ногой – и не забудь
+                    нажать на курок газа. Это ведь не просто «самокат из палок», это инновационный транспортный гаджет
+                    из алюминия и стали, который оснащён колесом-мотором в 250 Вт и бортовым компьютером!</p>
+                <p>Kickscooter ES2 через Bluetooth взаимодействует со смартфоном, умеет переключаться в экономичный
+                    режим, отражает скорость на дисплее и грамотно тормозит при нажатии на курок около левой рукояти.
+                    Система электронного тормоза повышает безопасность вождения, а передний пружинный амортизатор –
+                    смягчает движение.</p>
+                <p>Ну что, прокатимся с ветерком? Покупай Ninebot Kickscooter ES2 прямо сейчас – дороги ждут!
+                    Приключения начинаются!</p>
+                <a href="#">Смотреть все характеристики</a>
+            </div>
+            <div class="hidden-desc">
+                <div class="col1"><span>Основное:</span><br>
+                    Тип: электросамокат<br>
+                    Модель: KickScooter ES2<br>
+                    Производитель: Ninebot by Segway<br>
+                    Страна производитель: Китай<br>
+                    Вес самоката: 12.5 кг<br>
+                    <span> Общие характеристики:</span><br>
+                    Материал рамы: алюминиевый сплав<br>
+                    Степень защиты: IP54<br>
+                    Максимальная нагрузка: 120 кг<br>
+                    Угол подъема:	 15 °<br>
+                    Пробег на одном заряде: 25 км<br>
+                    Пробег с доп. аккумулятором:45 км<br>
+                    Максимальная скорость:25 км/ч<br>
+                    Емкость аккумулятора:5200 мА*ч<br>
+                    Мощность двигателя:	300 Вт<br>
+                    Длина самоката:113 см<br>
+                    Время зарядки:3.5 ч<br>
+                </div>
+                <div class="col2"><span>Подвеска:</span><br>
+                    Передний амортизатор: есть<br>
+                    Задний амортизатор: есть<br>
+                    <span>Колеса:</span><br>
+                    Число колес:2<br>
+                    Тип шин: безвоздушные<br>
+                    Материал колес: полиуретан<br>
+                    Диаметр переднего колеса:200 мм<br>
+                    Диаметр заднего колеса:192 мм<br>
+                    <span>Дополнительно:</span><br>
+                    Подключение доп. аккумулятора: есть<br>
+                    Дисплей: светодиодный<br>
+                    Bluetooth: есть<br>
+                    Приложение: Android OS, iOS<br>
+                    Складной: да<br>
+                    Передняя фара: есть<br>
+                    Задняя фара: есть<br>
+                    Подсветка дна: есть<br>
+                    Ручной тормоз: Да<br>
+                    Ножной тормоз: Да<br>
+                    Подножка: Да<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart target cart6">
+        <h2>Электросамокат Ninebot by Segway Kickscooter ES4  </h2>
+        <div class="close"></div>
+        <div class="big-img"></div>
+        <div class="cart-content">
+            <div class="mini-gallery">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+            <div class="block2">
+                <p>33 800  р.</p>
+                <button>ЗАКАЗАТЬ</button>
+            </div>
+            <div class="param-gallery">
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img1"></div>
+                    </div>
+                    <p>Ультрамодный дизайн</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img2"></div>
+                    </div>
+                    <p>Вес 14 кг</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img3"></div>
+                    </div>
+                    <p>Передний амортизатор</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img4"></div>
+                    </div>
+                    <p>Светоидная фара и отражатели</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img5"></div>
+                    </div>
+                    <p>Литые колеса<br> 8"</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img6"></div>
+                    </div>
+                    <p>Круиз контроль</p>
+                </div>
+                <div class="param-cont">
+                    <div class="param-el">
+                        <div class="param-img img7"></div>
+                    </div>
+                    <p>Приложение для смартфона</p>
+                </div>
+            </div>
+            <div class="desc">
+                <h2>Характеристиики</h2>
+                <p>Cерия Ninebot KickScooter ES состоит из четырех моделей, которые отличаются техническими
+                    характеристиками. Самая простая модель – ES1, а максимально продвинутая – ES4.</p>
+                <p>Благодаря дополнительной батареи электросамокат развивает скорость 30км/ч и может проехать до 45
+                    км на одном заряде.</p>
+                <p>Электросамокат Ninebot KickScooter ES4 выглядит очень стильно и прекрасно подходит для быстрого и
+                    максимально удобного передвижения по городу. Он очень легок и комфортен в использовании, его
+                    просто сложить (всего за несколько секунд простыми движениями), удобно транспортировать в багажнике
+                    любого автомобиля, переносить в руке и даже сложить в большой чемодан.</p>
+                <a href="#">Смотреть все характеристики</a>
+            </div>
+            <div class="hidden-desc">
+                <div class="col1"><span>Основное:</span><br>
+                    Тип: электросамокат<br>
+                    Модель: KickScooter ES4<br>
+                    Производитель: Ninebot by Segway<br>
+                    Страна производитель: Китай<br>
+                    Вес самоката: 14 кг с доп.батареей<br>
+                    <span> Общие характеристики:</span><br>
+                    Материал рамы: алюминиевый сплав<br>
+                    Степень защиты: IP54<br>
+                    Максимальная нагрузка: 120 кг<br>
+                    Угол подъема: 20 °<br>
+                    Пробег на одном заряде: 25 км<br>
+                    Пробег с доп. аккумулятором: 45 км<br>
+                    Максимальная скорость: 30 км/ч<br>
+                    Емкость встроенного аккумулятора: 5200 мА*ч<br>
+                    Емкость дополнительного аккумулятора: 5200 мА*ч<br>
+                </div>
+                <div class="col2"><span>Подвеска:</span><br>
+                    Передний амортизатор: есть<br>
+                    Задний амортизатор: есть<br>
+                    <span>Колеса:</span><br>
+                    Число колес: 2<br>
+                    Тип шин: безвоздушные<br>
+                    Материал колес: полиуретан<br>
+                    Диаметр переднего колеса: 200 мм<br>
+                    Диаметр заднего колеса: 192 мм<br>
+                    <span>Дополнительно:</span><br>
+                    Подключение доп. аккумулятора: есть<br>
+                    Дисплей: светодиодный<br>
+                    Bluetooth: есть<br>
+                    Приложение: Android OS, iOS<br>
+                    Складной: да<br>
+                    Передняя фара: есть<br>
+                    Задняя фара: есть<br>
+                    Подсветка дна: есть<br>
+                    Ручной тормоз: Да<br>
+                    Ножной тормоз: Да<br>
+                    Подножка: Да<br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+</html>
