@@ -683,17 +683,17 @@ button:hover, .click:hover{
     height: 450px;
     background: #fff;
     text-align: center;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     margin: auto;
     display: none;
+    top: 150px;
+
 }
-.form1 {
-    top: 3000px;
-}
-.form2 {
-    top: 4000px;
+.form form {
+    height: 100vh;
+    overflow: auto;
 }
 .form .close, .thanks .close {
     background: transparent;
@@ -701,6 +701,7 @@ button:hover, .click:hover{
     right: -5px;
     height: 32px;
     width: 32px;
+    z-index: 100;
 }
 .form h2 {
     font-size: 36px;
@@ -733,14 +734,14 @@ button:hover, .click:hover{
     font-family: 'open sans semi';
 }
 .thanks {
-    position: absolute;
-    top: 300px;
+    position: fixed;
     width: 440px;
     height: 570px;
     background: #fff;
     text-align: center;
     left: 0;
     right: 0;
+    top: 150px;
     margin: auto;
     z-index: 50;
     display: none;
@@ -1004,6 +1005,290 @@ button:hover, .click:hover{
     }
     .modal {
         height: 10000px;
+    }
+    .form, .thanks {
+        top: 40px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+        .layout {
+            width: 100%;
+            max-width: 600px;
+        }
+        .burger-menu {
+            display: block;
+            right: 20px;
+        }
+
+        .logo:after {
+            left: 60px;
+        }
+        .top-logo p {
+            margin-left: 170px;
+        }
+        .top-menu-bg {
+            position: fixed;
+            background: #fff;
+            width: 100%;
+            z-index: 50;
+        }
+        .top-menu-bg .top-menu {
+            display: none;
+            width: 100%;
+            float: none;
+            position: fixed;
+            top: 90px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            line-height: 50px;
+        }
+
+        .top-menu-bg   .top-menu a,.top-menu-bg .top-menu p {
+            display: block;
+            background: #fff;
+            margin: 0;
+            float: none;
+        }
+        .tel {
+            position: relative;
+        }
+        .tel:before {
+            right: 130px;
+            left: 0;
+            margin: auto;
+        }
+        .menu-hidden {
+            visibility: hidden;
+        }
+        .menu-visually-hidden {
+            opacity: 0;
+        }
+        .your-scooter {
+            width: 100%;
+            max-width: 440px;
+            position: static;
+        }
+        .click {
+            display: none;
+        }
+        .ellipse {
+            width: 115px;
+            position: absolute;
+            left: 0;
+            height: 115px;
+            background-size: cover;
+            z-index: 10;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .header-bg {
+            height: 900px;
+            background-size: cover;
+        }
+        .ellipse-cont ul {
+            clear: both;
+            width: 70%;
+            position: absolute;
+            right: 0;
+            float: none;
+            z-index: 1;
+        }
+    .cart-cont {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        left: 0;
+        right: 0;
+    }
+    .cart-cont:nth-child(3n+3) {
+        margin-right: auto;
+    }
+        .your-scooter p, .your-scooter h2 {
+            text-align: center;
+        }
+        .scooter {
+            background: url(../images/mobi-scooter.png);
+            top: 480px;
+            left: 0px;
+        }
+        .screen2 {
+            margin-top: 250px;
+        }
+
+        .extra-sale {
+            height: 330px;
+        }
+        .profit-bg {
+            height: 820px;
+            background: url(../images/mobi-profit.jpg) center no-repeat;
+            background-size: cover;
+            margin-top: 100px;
+        }
+        .profit-bg .layout > h2 {
+            position: relative;
+            top: -50px;
+        }
+        .profit-bg .layout > p {
+            margin-top: -50px;
+        }
+        .profit-bg .layout {
+            overflow: visible;
+        }
+
+        .prof-cont {
+            width: 50%;
+            margin-bottom: 50px;
+
+        }
+
+        .video {
+            width: 100%;
+        }
+        .cart {
+            width: 600px;
+        }
+    .footer .top-menu  {
+        display: block;
+    }
+    .footer .top-menu a {
+        display: block;
+        float: left;
+        margin: 20px 8px 20px;
+        line-height: 1;
+        text-align: left;
+    }
+        .param-cont {
+            width: 33.33%;
+            margin-bottom: 100px;
+        }
+        .param-cont:last-of-type{
+            width: 100%;
+        }
+        .cart .img {
+            margin-right: 15px;
+        }
+        .cart1 {
+            top: 2500px;
+        }
+        .sale .layout > p {
+            margin-bottom: 50px;
+        }
+        .cart2 .param-cont {
+            width: 33.33%;
+            text-align: center;
+        }
+        .cart2 .param-cont:last-of-type {
+            width: 100%;
+            text-align: center;
+        }
+        .cart3 .param-cont {
+            width: 33.33%;
+            text-align: center;
+        }
+        .cart3 .param-cont:nth-child(4), .cart3 .param-cont:nth-child(5) {
+            width: 50%;
+            text-align: center;
+        }
+        .cart4 .param-cont {
+            width: 25%;
+            text-align: center;
+        }
+        .cart4 .param-cont:last-of-type {
+            width: 100%;
+            text-align: center;
+        }
+        .param-cont p {
+            font-size: 12px;
+        }
+        .cart .block2 {
+            width: 100%;
+        }
+        .cart-content {
+            padding: 0 0px;
+        }
+        .cart .block2 {
+            margin-top: 40px;
+        }
+        .cart2 {
+            top: 2600px;
+        }
+        .cart3 {
+            top: 3000px;
+        }
+        .cart4 {
+            top: 3400px;
+        }
+        .cart1 {
+            top: 3900px;
+        }
+        .cart5 {
+            top: 4400px;
+        }
+        .cart6 {
+            top: 5100px;
+        }
+        .modal {
+            height: 10000px;
+        }
+    .form, .thanks {
+        top: 40px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .layout, .your-scooter, .gallery  {
+        width: 768px;
+        margin: 0 auto;
+    }
+    .top-menu {
+        line-height: 90px;
+        float: left;
+        width: 500px;
+        font-family: 'montserat semi-bold';
+        font-size: 14px;
+    }
+    .top-menu a {
+        margin-left: 20px;
+    }
+    .top-menu a:first-of-type {
+        margin-left: 50px;
+    }
+    .tel {
+        margin-left: 30px;
+    }
+    .scooter {
+        right: -780px;
+    }
+    .cart-cont {
+        width: 300px;
+        height: 460px;
+        float: left;
+        text-align: left;
+        margin: 0 0px 45px 50px;
+    }
+    .cart-cont:nth-child(2n+2) {
+        float: right;
+        margin: 0 45px 50px 0;
+    }
+    .cart1 {
+        top: 600px;
+    }
+    .cart {
+        width: 768px;
+    }
+    .cart .block2 {
+        margin-top: 50px;
+    }
+    .cart4, .cart1-pos2 {
+        top: 2500px;
+    }
+    .cart5, .cart6{
+        top: 3200px;
+    }
+    .form, .thanks {
+        top: 120px;
     }
 }
 

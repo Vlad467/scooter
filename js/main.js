@@ -44,10 +44,15 @@ $('.burger-menu').on('click', function() {
 });
 $('.sale1').click(function(){
     $('.modal').show();
-    $('.form').removeClass('form2').addClass('form1').fadeIn(1000);
-    $('.thanks').addClass('form2');
+    $('.form').fadeIn(1000);
+
 });
 $('.sale2').click(function(){
     $('.modal').show();
-    $('.form').removeClass('form1').addClass('form2').fadeIn(1000);
+    $('.form').fadeIn(1000);
+});
+$('.cart-cont .block1 button').click(function() {
+    $('.modal').show();
+    $('.form').fadeIn(1000);
+   var text = $(this).parent('.block1').parent('.cart-cont').find('.dark').text();
 });
